@@ -1,15 +1,18 @@
 import React from "react";
 import "./App.css";
-import About from "./About";
+import About from "../src/components/About";
+import Contact from "../src/components/Contact";
+import Nav from "../src/components/Nav";
+import Projects from "../src/components/Projects";
 
 function App() {
   return (
     <div>
-      <header>
-        <h1>Andrew Piccolo</h1>
-      </header>
       <main>
-        <About></About>
+        <Nav />
+        <About />
+        <Projects />
+        <Contact />
       </main>
       <footer></footer>
     </div>
