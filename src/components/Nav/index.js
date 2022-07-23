@@ -1,18 +1,18 @@
 import React from "react";
 
 function Nav() {
-    return(
-        <header>
-            <h1>Andrew Piccolo</h1>
-            <nav>
-                <ul>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
+  return (
+    <header>
+      <nav className="navbar">
+        <h1>Andrew Piccolo</h1>
+        <ul>
+          <li className="nav-link">About</li>
+          <li className="nav-link">Projects</li>
+          <li className="nav-link">Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default Nav
+export default Nav;
