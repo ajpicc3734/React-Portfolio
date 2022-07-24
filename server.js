@@ -14,10 +14,8 @@ app.listen(PORT, () => console.log("Server Running on localhost 3000"));
 const formEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ajpicc3734@gmail.com",
-    pass: "calvinklein",
-     user: process.env.NODEMAILER_USER,
-     pass: process.env.NODEMAILER_PASS,
+    user: process.env.NODEMAILER_USER,
+    pass: process.env.NODEMAILER_PASS,
   },
 });
 
