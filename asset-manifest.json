@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.bcc76e06.css",
+    "main.js": "/React-Portfolio/static/js/main.47d983ad.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/office.jpg": "/React-Portfolio/static/media/office.60d59a12cf5b732047e1.jpg",
+    "static/media/pexels-mike-1181769.jpg": "/React-Portfolio/static/media/pexels-mike-1181769.8bb4415e57ad5a602e48.jpg",
+    "static/media/WebDev Resume 2022 (1).pdf": "/React-Portfolio/static/media/WebDev Resume 2022 (1).975cc3f0334e350a37ee.pdf",
+    "static/media/photo-1477233534935-f5e6fe7c1159.avif": "/React-Portfolio/static/media/photo-1477233534935-f5e6fe7c1159.388668912654cfb06445.avif",
+    "static/media/IMG_0951 (1).jpg": "/React-Portfolio/static/media/IMG_0951 (1).928f31d0859d896ac5a3.jpg",
+    "static/media/new-linkedin-logo-white-black-png.png": "/React-Portfolio/static/media/new-linkedin-logo-white-black-png.ba884e1f9ad4362348c1.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.bcc76e06.css.map": "/React-Portfolio/static/css/main.bcc76e06.css.map",
+    "main.47d983ad.js.map": "/React-Portfolio/static/js/main.47d983ad.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcc76e06.css",
+    "static/js/main.47d983ad.js"
+  ]
+}
