@@ -3,7 +3,7 @@ import React from "react";
 function Form() {
   return (
     <section>
-      <h2>Contact</h2>
+      <h2 id="contact">Contact</h2>
       <form>
         <div>
           <label htmlFor="name"></label>

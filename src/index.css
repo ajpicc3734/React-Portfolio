@@ -3,9 +3,11 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Sora', sans-serif;
+    
+    font-family: 'Sora', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#f5f3f4, #ffffff);
 }
 
 code {
@@ -26,22 +28,15 @@ code {
 /* color pallet 
 https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
 
-:root {
-  /* background: #ffff; */
-  background: linear-gradient(gray, white);
-}
 
-body {
-  font-family: 'Sora', sans-serif;
-}
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  /* border-bottom: 1px solid black; */
-  /* background-color: #ffff; */
+  border-bottom: 1px solid black; 
+  background-color: #ffff; 
   margin: 0 auto;
 }
 
@@ -54,6 +49,9 @@ nav ul {
 .nav-link {
   padding: 10px 15px;
   font-size: 2rem;
+  color: #979dac;
+}
+.nav-link a {
   color: #979dac;
 }
 
@@ -82,6 +80,13 @@ margin-bottom: 10%;
   padding-bottom: 1rem;
 }
 
+.about-text p {
+  color: #979dac;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  
+}
+
 .about-container p {
   max-width: 390 px;
   padding-right: 3%;
@@ -91,10 +96,27 @@ margin-bottom: 10%;
   border-radius: 35%;
 }
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+}
+
+.project img {
+  width: 675px;
+  height: 475px;
+  display: block;
+}
+
 h2 {
   color: #979dac;
 }
 
-p {
-  color: #979dac;
-}

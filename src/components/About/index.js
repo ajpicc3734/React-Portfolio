@@ -6,7 +6,7 @@ function About() {
       
       <div className="about-container">
       <div className="about-text">
-      <h2>About</h2>
+      <h2 id="about">About</h2>
         <p>
           Highly determined web developer with experience creating applications
           with both front-end and back-end functionality. A background working
