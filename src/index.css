@@ -1,10 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    
+    font-family: 'Sora', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#f5f3f4, #ffffff);
 }
 
 code {
@@ -25,22 +28,95 @@ code {
 /* color pallet 
 https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
 
-:root {
-  background: #ffffff;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid black; 
+  background-color: #ffff; 
+  margin: 0 auto;
 }
 
-body {
-  font-family: 'Sora', sans-serif;
+nav ul {
+  display: flex;
+  padding: 1rem;
+ 
+}
+
+.nav-link {
+  padding: 10px 15px;
+  font-size: 2rem;
+  color: #979dac;
+}
+.nav-link a {
+  color: #979dac;
 }
 
 h1 {
  color:  #212529;
+ font-size: 4rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4% 15% 10% 10%;
+
+}
+
+.about-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 10%;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about-text p {
+  color: #979dac;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  
+}
+
+.about-container p {
+  max-width: 390 px;
+  padding-right: 3%;
+}
+
+.about-me-img img {
+  border-radius: 35%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+}
+
+.project img {
+  width: 675px;
+  height: 475px;
+  display: block;
 }
 
 h2 {
   color: #979dac;
 }
 
-p {
-  color: #979dac;
-}

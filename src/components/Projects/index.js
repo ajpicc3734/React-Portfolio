@@ -7,40 +7,39 @@ function Projects(work) {
   //     image:img
   // } = work;
   return (
-    <section id="work">
-      <h2>Work</h2>
+    <section>
+      <h2 id="projects">Projects</h2>
 
-      <div class="container">
-        <section class="card">
-          <div class="img-txt">
-            <h3>Vinyl Collectors</h3>
-          </div>
+      <div className="project-container">
+        <section className="project">
+          <h3>Vinyl Collectors</h3>
+          <div>
           <a href="https://github.com/ajpicc3734/Project-2">
             <img
-              src="./assets/images/pexels-mike-1181769.jpg"
+              src={require("../../assets/images/pexels-mike-1181769.jpg")}
               alt="vinyl records"
             />
           </a>
+          </div>
         </section>
 
-        <section class="card">
-          <div class="img-txt">
-            <h3>Trending music</h3>
-          </div>
+        <section className="project">
+          <h3>Trending music</h3>
+
           <a href="https://github.com/ajpicc3734/Group-Project">
             <img
-              src="./assets/images/photo-1477233534935-f5e6fe7c1159.avif"
+              src={require("../../assets/images/photo-1477233534935-f5e6fe7c1159.avif")}
               alt="music"
             />
           </a>
         </section>
 
-        <section class="card">
-          <div class="img-txt">
+        <section className="project">
+          <div>
             <h3>Employee Tracker</h3>
           </div>
           <a href="https://github.com/ajpicc3734/Employee-Tracker">
-            <img src="./assets/images/office.jpg" alt="office" />
+            <img src={require("../../assets/images/office.jpg")} />
           </a>
         </section>
       </div>
