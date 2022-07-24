@@ -1,40 +1,89 @@
 import React, { useState } from "react";
 
 function Form() {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+  // const [status, setStatus] = useState("Submit");
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus("Sending...");
+  //   const { name, email, message } = e.target.elements;
+  //   let content = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   let response = await fetch("http://localhost:3000/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(content),
+  //   });
+  //   setStatus("Submit");
+  //   let result = await response.json();
+  //   alert(result.status);
+  //   console.log(content);
+
+  function validateEmail(email) {
+    var re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const { name, email, message } = formState;
+  function handleChange(e) {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        if (!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+    console.log("errorMessage", errorMessage);
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+  function handleSubmit(e) {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let content = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(content),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-    console.log(content);
-  };
+    console.log(formState);
+  }
+
   return (
     <section>
       <h2 id="contact">Contact</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name"></label>
-          <input placeholder="Your Name" type="text" name="name" />
+          <input
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            onBlur={handleChange}
+          />
         </div>
 
         <div>
           <label htmlFor="email"></label>
-          <input placeholder="Your Email" type="email" name="email" />
+          <input
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            onBlur={handleChange}
+          />
         </div>
         <div>
           <label htmlFor="message"></label>
@@ -42,10 +91,21 @@ function Form() {
             placeholder="Your Message"
             type="text"
             name="message"
+            onBlur={handleChange}
           ></textarea>
         </div>
-        <button type="submit">{status}</button>
+        <button type="submit">Submit</button>
       </form>
+
+      <div className="resume">
+        <a
+          href={require("../../assets/docs/WebDev Resume 2022 (1).pdf")}
+          target="_blank"
+          download
+        >
+          Download Resume
+        </a>
+      </div>
 
       <div>
         <ul class="contact-container">
