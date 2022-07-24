@@ -144,6 +144,17 @@ textarea {
   border: 1px solid black;
 }
 
+.resume {
+  color: #979dac;
+  text-align: center;
+  margin: 25px;
+  padding: 10px;
+}
+
+.resume a {
+  color: #979dac;
+}
+
 .contact-img {
   height: 64px;
   width: 64px;
