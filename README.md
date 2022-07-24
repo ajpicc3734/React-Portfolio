@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a portfolio built with React
+This is a web developer portfolio built with React
 
 ## Built With
 
